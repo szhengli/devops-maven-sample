@@ -25,7 +25,7 @@ pipeline {
                 checkout(scm)
             }
         }
-
+    /**
         stage ('unit test') {
             steps {
                 container ('maven') {
@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
- 
+    **/
         stage ('build & push') {
             steps {
                 container ('maven') {
